@@ -1,0 +1,44 @@
+<section class="ui segment">
+    <h2 class="ui header">
+        ${_station.name}
+    </h2>
+    <div class="ui five cards inverted">
+        <div class="card">
+            <div class="extra">
+                <h2 class="header">${_station.name}</h2>
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+                <h2 class="header">Weather</h2>
+                <h4 class="header">${_station.codeToText(_station.readings.code.last())}</h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+                <h2 class="header">Temp</h2>
+                <ul class="ui list">
+                    <li>${_station.readings.temperature.last()} C</li>
+                    <li>${_station.calculateFahrenheit(_station.readings.temperature.last())} F</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+                <h2 class="header">Wind</h2>
+                <ul class="ui list">
+                    <li>${_station.windBeaufort(_station.readings.windSpeed.last())} bft</li>
+                    <li>${_station.windDirection(_station.readings.windDirection.last())}</li>
+                    <li>Feels like</li>
+                    <li>${_station.windChill(_station.readings.windSpeed.last(), _station.readings.temperature.last())}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+                <h2 class="header">Pressure</h2>
+                <h4 class="header">${_station.pressure(_station.readings.pressure.last())} hpa</h4>
+            </div>
+        </div>
+    </div>
+</section>
