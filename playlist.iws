@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6d1f325e-3277-4c04-9b3d-f28684b8510d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/playlist.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/playlist.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playlist.iws" beforeDir="false" afterPath="$PROJECT_DIR$/playlist.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +61,7 @@
       <workItem from="1620835722180" duration="18632000" />
       <workItem from="1621029157834" duration="2117000" />
       <workItem from="1621673647128" duration="154000" />
+      <workItem from="1621767837962" duration="91000" />
     </task>
     <servers />
   </component>
